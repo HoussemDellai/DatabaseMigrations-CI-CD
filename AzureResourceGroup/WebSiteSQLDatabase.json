@@ -174,7 +174,7 @@
             "[resourceId('Microsoft.Web/Sites/', parameters('webSiteName'))]"
           ],
           "properties": {
-            "WebAppContext": {
+            "ProductsContext": {
               "value": "[concat('Data Source=tcp:', reference(resourceId('Microsoft.Sql/servers/', parameters('sqlserverName'))).fullyQualifiedDomainName, ',1433;Initial Catalog=', parameters('databaseName'), ';User Id=', parameters('administratorLogin'), '@', parameters('sqlserverName'), ';Password=', parameters('administratorLoginPassword'), ';')]",
               "type": "SQLAzure"
             }
