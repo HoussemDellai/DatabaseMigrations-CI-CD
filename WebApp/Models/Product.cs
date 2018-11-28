@@ -11,6 +11,6 @@ namespace WebApp.Models
 
         public int Quantity { get; set; }
 
-        //public string Color { get; set; }
+        public string Color { get; set; }
     }
 }
