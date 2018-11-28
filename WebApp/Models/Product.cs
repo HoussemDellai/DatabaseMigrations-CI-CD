@@ -10,5 +10,7 @@ namespace WebApp.Models
         public double Cost { get; set; }
 
         public int Quantity { get; set; }
+
+        //public string Color { get; set; }
     }
 }
