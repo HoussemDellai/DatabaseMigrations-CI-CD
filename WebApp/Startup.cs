@@ -44,7 +44,10 @@ namespace WebApp
             IHostingEnvironment env, 
             ProductsContext context)
         {
-            context.Database.Migrate();
+            if (Configuration.GetValue<bool>("DatabaseMigrate"))
+            {
+                context.Database.Migrate();
+            }
 
             if (env.IsDevelopment())
             {
